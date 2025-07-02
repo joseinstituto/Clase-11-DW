@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 05</title>
+    <style>
+        #recuadro1{
+            border-radius: 20px;
+            background-color:#ddd;
+            width:200px;
+            padding:10px;
+            color: rgb(255, 255, 0)
+        }
+        #recuadro1:hover{
+            transform: skew(15deg, 0deg); /* Vuelve a la posición original al pasar el mouse */
+            opacity: 0.5;/* 0 a 1 */
+        }
+        #recuadro2{
+            border-radius: 20px;
+            background-color:#ddd;
+            width:200px;
+            padding:10px;
+            margin-top:50px;
+            color: rgb(255, 255, 0)
+        }
+        #recuadro2:hover{
+            transform: skew(0deg, 15deg); /* Aplica una transformación de inclinación al pasar el mouse */
+            opacity: 0.5;/* 0 a 1 */
+        }
+        #recuadro3{
+            border-radius: 20px;
+            background-color:#ddd;
+            width:200px;
+            padding:10px;
+            margin-top:50px;
+            color: rgb(255, 255, 0)
+        }
+        #recuadro3:hover{
+            transform: skew(15deg, 0deg);
+            opacity: 0.5;/* 0 a 1 */
+        }
+        body {
+            background:white;
+            margin:50px;
+        }
+        .btn-regresar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #0074d9;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .btn-regresar:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="btn-regresar">← Regresar al Índice</a>
+    
+    <div id="recuadro1">
+        <h3>Recuadro 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+           Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
+           natoque penatibus et magnis dis parturient montes, nascetur 
+           ridiculus mus. Donec quam felis, ultricies nec, </p>
+    </div>
+    <div id="recuadro2">
+        <h3>Recuadro 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+           Aenean commodo ligula eget dolor. Aenean massa. 
+           Cum sociis natoque penatibus et magnis dis parturient montes, 
+           nascetur ridiculus mus. Donec quam felis, ultricies nec, </p>
+    </div>
+    <div id="recuadro3">
+        <h3>Recuadro 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+           Aenean commodo ligula eget dolor. Aenean massa. 
+           Cum sociis natoque penatibus et magnis dis parturient montes, 
+           nascetur ridiculus mus. Donec quam felis, ultricies nec, </p>
+    </div>
+</body>
+</html>

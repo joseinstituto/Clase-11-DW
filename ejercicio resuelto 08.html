@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 08</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin: 50px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .contenedor {
+            background: linear-gradient(135deg, #0f1419 0%, #1a2332 30%, #2d4a6b 70%, #4a7ba7 100%);
+            color: #ffff00;
+            width: 500px;
+            height: 280px;
+            border-radius: 15px;
+            font-size: 24px;
+            padding: 25px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .contenedor::before {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            right: -80px;
+            width: 280px;
+            height: 200px;
+            background: radial-gradient(ellipse, rgba(70,120,200,0.8) 0%, rgba(40,80,150,0.6) 40%, rgba(20,50,100,0.3) 80%, transparent 100%);
+            border-radius: 60% 40% 80% 20%;
+            transform: rotate(-25deg);
+        }
+        
+        .contenedor::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 200px;
+            height: 150px;
+            background: linear-gradient(45deg, rgba(100,150,250,0.4) 0%, rgba(60,110,200,0.6) 50%, rgba(30,70,150,0.8) 100%);
+            border-radius: 80% 20% 60% 40%;
+            transform: rotate(15deg);
+        }
+        
+        .texto {
+            color: rgba(255, 255, 0, 0.85);
+            line-height: 1.5;
+            position: relative;
+            z-index: 2;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,</p>
+    </div>
+    <a href="index.html" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">Regresar al Índice</a>
+</body>
+</html>
